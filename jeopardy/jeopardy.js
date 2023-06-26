@@ -43,7 +43,7 @@ function getCategoryIds() {
 
 
 function getCategory(catId) {
-    
+
 }
 
 /** Fill the HTML Card#jeopardy with the categories & cells for questions.
@@ -56,8 +56,10 @@ function getCategory(catId) {
  */
 
 async function fillCard() {
+    const res = await axios.get("https://jservice.io/api/categories?count=6");
+    const jepBoard = document.getElementById('jeopardy');
+    const topCat = document.createElement('div');
 }
-
 /** Handle clicking on a clue: show the question or answer.
  *
  * Uses showed property on category Index to determine what to show:
@@ -80,7 +82,8 @@ function showLoadingView() {
 /** Remove the loading spinner and update the button used to fetch data. */
 
 function hideLoadingView() {
-    document.getElementById(`#fa fa-spin fa-spinner`)
+    const hideSpin = document.querySelector("#fa fa-spin fa-spinner");
+    hideSpin.hide();
 
 }
 
@@ -96,10 +99,10 @@ async function setupAndStart() {
 }
 
 /** On click of start / restart button, set up game. */
-const btnStart = document.getElementById("start");
+const btnStart = document.querySelector("#start");
 btnStart.addEventListener("click", )
 // TODO
-
+const btrRestart = document.querySelector("#reset")
 /** On page load, add event handler for clicking clues */
 
 // TODO
