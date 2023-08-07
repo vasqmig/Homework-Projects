@@ -1,0 +1,27 @@
+.Deck {
+    text-align: center;
+  }
+  
+  .New-Deck {
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    margin: 0 10px;
+  }
+  
+  .New-Deck:hover {
+    cursor: pointer;
+    background-color: #444;
+  }
+  
+  .New-Deck:active,
+  .New-Deck:focus {
+    outline: none;
+  }
+  
+  .Deck-cardarea {
+    margin-top: 80px;
+  }
+  
