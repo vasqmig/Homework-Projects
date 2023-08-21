@@ -5,14 +5,13 @@ import image from ".//vendiMachine.gif"
 
 function VendingMachine() {
     return(
-        <div style={{backgroundImage:`url(${image})`}}>
+        <div style={{backgroundImage:`url(${image})`,backgroundRepeat: "no-repeat"}}>
             <h1>Pick Wisely</h1>
-            <p> Selection
-            <Link to="/Soda"> Soda </Link>
-            <Link to = "Chips"> Chips </Link>
-            <Link to ="Candy"> Candy </Link>
-            <Link to = "Soup"> Soup </Link>
-            </p>
+            <p><b>Selection</b></p>
+            <p><Link to="/Soda"> Soda </Link></p>
+            <p><Link to = "Chips"> Chips </Link></p>
+            <p><Link to ="Candy"> Candy </Link></p>
+            <p><Link to = "Soup"> Soup </Link></p>
         </div>
     );
 }
