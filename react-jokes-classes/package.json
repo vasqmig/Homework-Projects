@@ -1,6 +1,7 @@
 {
   "name": "icanhazdadjokes",
   "version": "0.1.0",
+  "homepage": "http://vasqmig.github.io/Homework-Projects/react-jokes-classes",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "*",
@@ -8,12 +9,15 @@
     "@testing-library/react": "*",
     "@testing-library/user-event": "*",
     "axios": "*",
+    "gh-pages": "^6.0.0",
     "react": "*",
     "react-dom": "*",
     "react-scripts": "*",
     "react-spinners": "*"
   },
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
